@@ -1,0 +1,14 @@
+.countryAutocomplete {
+  /* Container-scoped MUI tweaks */
+  :global(.MuiAutocomplete-root) {
+    :global(.MuiFormLabel-root),
+    :global(.MuiInputBase-root) {
+      padding-left: 1.5rem !important; /* align with space for the leading icon */
+    }
+    &:global(.MuiAutocomplete-root.Mui-expanded) {
+      :global(.MuiFormLabel-root) {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
